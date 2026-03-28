@@ -1,0 +1,881 @@
+/* PROJECTS PAGE STYLES */
+
+/* HERO SECTION */
+.projects-hero {
+  padding-top: 170px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.projects-hero__content {
+  position: relative;
+  display: inline-block;
+}
+
+.projects-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 96px;
+  line-height: 1;
+  display: inline-block;
+}
+
+/* DECOR - большая звезда рядом с заголовком */
+.projects-hero .decor--star-big {
+  position: absolute;
+  top: -60px;
+  left: 480px;
+  width: 200px;
+  height: 200px;
+  transform: none;
+}
+
+/* PROJECTS SECTION */
+.projects-section {
+  padding: 0 0 150px;
+}
+
+/* GRID CONTAINER - ограничиваем шириной 1300px */
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.projects-grid > .projects-row:nth-child(2) {
+  margin-bottom: 150px;
+}
+
+.projects-grid > .projects-row:last-child {
+  margin-bottom: 0px;
+}
+
+/* PROJECT ROWS */
+.projects-row {
+  display: flex;
+  gap: 80px;
+  position: relative;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.projects-row--bottom {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* PROJECT CARD BASE */
+.project-card {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* LEFT COLUMN CARD */
+.project-card--left {
+  width: 641px;
+  height: 680px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* RIGHT COLUMN CARD */
+.project-card--right {
+  width: 532px;
+  height: 680px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* WIDE CARD */
+.project-card--wide {
+  width: 918px;
+  height: 709px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* HEADERS */
+.project-card__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.project-card__header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.project-card__header p {
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+}
+
+/* BACKGROUND RECTANGLES */
+.project-card__bg {
+  position: absolute;
+  z-index: 1;
+}
+
+/* IMAGES */
+.project-card__image {
+  position: absolute;
+  z-index: 2;
+  transform-origin: center center;
+  transition: transform 0.5s ease;
+}
+
+.project-card__image:hover {
+  animation: rock 1s ease-in-out infinite;
+}
+
+@keyframes rock {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+/* Purrfect Paws Spa - оранжевый прямоугольник */
+.project-card--left .project-card__bg--orange {
+  top: 99px;
+  left: 0;
+  width: 531px;
+  height: 520px;
+  background: var(--accent);
+}
+
+.project-card--left .project-card__image {
+  top: 200px;
+  left: 35px;
+  width: 606px;
+  height: auto;
+}
+
+/* Re:Крой - зелёный прямоугольник */
+.project-card--right .project-card__bg--green {
+  top: 98px;
+  left: 0;
+  width: 422px;
+  height: 521px;
+  background: var(--green);
+}
+
+.project-card--right .project-card__image {
+  top: 152px;
+  left: 27px;
+  width: 505px;
+  height: auto;
+}
+
+/* Башлы Кэше - узкий зелёный (смещён ниже, к центру фото) */
+.project-card--left .project-card__bg--green-narrow {
+  top: 320px;
+  left: 0;
+  width: 530px;
+  height: 362px;
+  background: var(--green);
+}
+
+.project-card--left .project-card__image--bashly {
+  top: 127px;
+  left: 110px;
+  width: 370px;
+  height: 750px;
+  object-fit: cover;
+}
+
+/* Робот Фьёрли - узкий оранжевый (смещён ниже, к центру фото) */
+.project-card--right .project-card__bg--orange-narrow {
+  top: 320px;
+  left: 0;
+  width: 530px;
+  height: 362px;
+  background: var(--accent);
+}
+
+.project-card--right .project-card__image--robot {
+  top: 124px;
+  left: 102px;
+  width: 365px;
+  height: 750px;
+  object-fit: cover;
+}
+
+/* Зверополис - широкий оранжевый */
+.project-card--wide .project-card__bg--orange-wide {
+  top: 126px;
+  left: 0;
+  width: 762px;
+  height: 583px;
+  background: var(--accent);
+}
+
+.project-card--wide .project-card__image--zveropolis {
+  top: 167px;
+  left: 55px;
+  width: 863px;
+  height: auto;
+}
+
+/* DECOR - звёздочки справа снизу от Зверополиса */
+.projects-decor {
+  position: relative;
+  width: 300px;
+  height: 260px;
+  flex-shrink: 0;
+  margin-left: 50px;
+}
+
+.projects-decor .decor--star {
+  position: absolute;
+  bottom: -250px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.projects-decor .decor--star-big {
+  position: absolute;
+  bottom: -400px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+/* CONTACTS on projects page */
+.contacts--projects {
+  padding: 120px 0;
+  margin-top: 0;
+}
+
+/* SCROLL UP BUTTON */
+.scroll-up {
+  display: block;
+  width: calc((100% - 220px) / 12);
+  height: auto;
+  cursor: pointer;
+}
+
+.scroll-up img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0);
+  transition: filter 0.3s ease;
+}
+
+.scroll-up:hover img {
+  filter: brightness(0) sepia(1) saturate(100) hue-rotate(45deg);
+}
+
+.scroll-up:active img {
+  filter: brightness(0);
+}
+
+/* Active button state */
+.btn--active {
+  background: var(--dark);
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--bg);
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: default;
+  width: 200px;
+  text-align: center;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+/* Планшеты и небольшие десктопы (до 1024px) */
+@media (max-width: 1024px) {
+  .projects-hero {
+    padding-top: 220px;
+    padding-bottom: 100px;
+  }
+
+  .projects-hero h1 {
+    font-size: 72px;
+  }
+
+  .projects-hero .decor--star-big {
+    top: -60px;
+    left: 350px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .projects-section {
+    padding: 0 0 150px;
+  }
+
+  .projects-grid {
+    gap: 100px;
+  }
+
+  .projects-grid > .projects-row:nth-child(2) {
+    margin-bottom: 150px;
+  }
+
+  .projects-row {
+    gap: 80px;
+  }
+
+  .project-card--left {
+    width: 500px;
+    height: 580px;
+  }
+
+  .project-card--right {
+    width: 420px;
+    height: 580px;
+  }
+
+  .project-card--wide {
+    width: 720px;
+    height: 600px;
+  }
+
+  .project-card__header h2 {
+    font-size: 32px;
+  }
+
+  .project-card__header p {
+    font-size: 18px;
+  }
+
+  /* Purrfect Paws Spa */
+  .project-card--left .project-card__bg--orange {
+    top: 100px;
+    left: 0;
+    width: 420px;
+    height: 420px;
+  }
+
+  .project-card--left .project-card__image {
+    top: 180px;
+    left: 30px;
+    width: 480px;
+  }
+
+  /* Re:Крой */
+  .project-card--right .project-card__bg--green {
+    top: 98px;
+    left: 0;
+    width: 340px;
+    height: 422px;
+  }
+
+  .project-card--right .project-card__image {
+    top: 140px;
+    left: 22px;
+    width: 400px;
+  }
+
+  /* Башлы Кэше */
+  .project-card--left .project-card__bg--green-narrow {
+    top: 300px;
+    left: 0;
+    width: 420px;
+    height: 300px;
+  }
+
+  .project-card--left .project-card__image--bashly {
+    top: 120px;
+    left: 85px;
+    width: 270px;
+    height: 620px;
+  }
+
+  /* Робот Фьёрли */
+  .project-card--right .project-card__bg--orange-narrow {
+    top: 300px;
+    left: 0;
+    width: 420px;
+    height: 300px;
+  }
+
+  .project-card--right .project-card__image--robot {
+    top: 118px;
+    left: 80px;
+    width: 265px;
+    height: 620px;
+  }
+
+  /* Зверополис */
+  .project-card--wide .project-card__bg--orange-wide {
+    top: 120px;
+    left: 0;
+    width: 600px;
+    height: 480px;
+  }
+
+  .project-card--wide .project-card__image--zveropolis {
+    top: 150px;
+    left: 45px;
+    width: 680px;
+  }
+
+  .projects-decor {
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+  }
+
+  .projects-decor .decor--star {
+    bottom: -10px;
+    left: 15px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .projects-decor .decor--star-big {
+    bottom: -130px;
+    left: 80px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .contacts--projects {
+    padding: 120px 0;
+  }
+}
+
+/* Планшеты портретные и большие телефоны (до 768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .logo img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .logo span {
+    font-size: 18px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .nav .btn,
+  .btn--active {
+    padding: 10px 18px;
+    font-size: 14px;
+    width: auto;
+  }
+
+  .projects-hero {
+    padding-top: 180px;
+    padding-bottom: 80px;
+  }
+
+  .projects-hero h1 {
+    font-size: 56px;
+  }
+
+  .projects-hero .decor--star-big {
+    top: -50px;
+    left: 280px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .projects-section {
+    padding: 0 0 120px;
+  }
+
+  .projects-grid {
+    gap: 80px;
+  }
+
+  .projects-grid > .projects-row:nth-child(2) {
+    margin-bottom: 120px;
+  }
+
+  /* Сетка в 2 колонки */
+  .projects-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .projects-row--bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  /* Карточки на всю ширину в своей ячейке */
+  .project-card--left,
+  .project-card--right {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+  }
+
+  .project-card--wide {
+    width: 100%;
+    height: auto;
+    min-height: 550px;
+  }
+
+  .project-card__header h2 {
+    font-size: 28px;
+  }
+
+  .project-card__header p {
+    font-size: 16px;
+  }
+
+  /* Purrfect Paws Spa */
+  .project-card--left .project-card__bg--orange {
+    top: 80px;
+    left: 0;
+    width: 80%;
+    height: 380px;
+  }
+
+  .project-card--left .project-card__image {
+    top: 150px;
+    left: 20px;
+    width: 90%;
+  }
+
+  /* Re:Крой */
+  .project-card--right .project-card__bg--green {
+    top: 80px;
+    left: 0;
+    width: 80%;
+    height: 380px;
+  }
+
+  .project-card--right .project-card__image {
+    top: 120px;
+    left: 15px;
+    width: 90%;
+  }
+
+  /* Башлы Кэше */
+  .project-card--left .project-card__bg--green-narrow {
+    top: 280px;
+    left: 0;
+    width: 80%;
+    height: 260px;
+  }
+
+  .project-card--left .project-card__image--bashly {
+    top: 110px;
+    left: 60px;
+    width: 60%;
+    height: 620px;
+  }
+
+  /* Робот Фьёрли */
+  .project-card--right .project-card__bg--orange-narrow {
+    top: 280px;
+    left: 0;
+    width: 80%;
+    height: 260px;
+  }
+
+  .project-card--right .project-card__image--robot {
+    top: 108px;
+    left: 55px;
+    width: 60%;
+    height: 620px;
+  }
+
+  /* Зверополис */
+  .project-card--wide .project-card__bg--orange-wide {
+    top: 100px;
+    left: 0;
+    width: 80%;
+    height: 380px;
+  }
+
+  .project-card--wide .project-card__image--zveropolis {
+    top: 130px;
+    left: 35px;
+    width: 90%;
+  }
+
+  .projects-decor {
+    width: 150px;
+    height: 180px;
+    margin-left: 0;
+    margin-top: 50px;
+    align-self: flex-end;
+  }
+
+  .projects-decor .decor--star {
+    bottom: -5px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .projects-decor .decor--star-big {
+    bottom: -100px;
+    left: 60px;
+    width: 110px;
+    height: 110px;
+  }
+
+  .contacts--projects {
+    padding: 100px 0;
+  }
+
+  .contacts__row {
+    gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts__item {
+    font-size: 18px;
+  }
+
+  .scroll-up {
+    width: 60px;
+  }
+}
+
+/* Мобильные телефоны (до 480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: 15px 0;
+  }
+
+  .header__inner {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    gap: 8px;
+  }
+
+  .logo img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .logo span {
+    font-size: 16px;
+  }
+
+  .nav {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav a {
+    font-size: 13px;
+  }
+
+  .nav .btn,
+  .btn--active {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .projects-hero {
+    padding-top: 140px;
+    padding-bottom: 60px;
+  }
+
+  .projects-hero h1 {
+    font-size: 42px;
+  }
+
+  .projects-hero .decor--star-big {
+    top: -30px;
+    left: 200px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .projects-section {
+    padding: 0 0 80px;
+  }
+
+  .projects-grid {
+    gap: 60px;
+  }
+
+  .projects-grid > .projects-row:nth-child(2) {
+    margin-bottom: 80px;
+  }
+
+  /* Одна колонка на мобильных */
+  .projects-row {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 0;
+  }
+
+  .projects-row--bottom {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .project-card--left,
+  .project-card--right,
+  .project-card--wide {
+    min-height: 380px;
+  }
+
+  .project-card__header {
+    padding-left: 20px;
+  }
+
+  .project-card__header h2 {
+    font-size: 24px;
+  }
+
+  .project-card__header p {
+    font-size: 14px;
+  }
+
+  /* Purrfect Paws Spa */
+  .project-card--left .project-card__bg--orange {
+    top: 70px;
+    left: 20px;
+    width: 85%;
+    height: 300px;
+  }
+
+  .project-card--left .project-card__image {
+    top: 120px;
+    left: 20px;
+    transform: none;
+    width: 90%;
+    height: auto;
+  }
+
+  /* Re:Крой */
+  .project-card--right .project-card__bg--green {
+    top: 70px;
+    left: 20px;
+    width: 85%;
+    height: 300px;
+  }
+
+  .project-card--right .project-card__image {
+    top: 95px;
+    left: 20px;
+    transform: none;
+    width: 90%;
+    height: auto;
+  }
+
+  /* Башлы Кэше - больший отступ снизу и высота */
+  .projects-row:nth-child(2) .project-card--left {
+    margin-bottom: 80px;
+    min-height: 550px;
+  }
+
+  .project-card--left .project-card__bg--green-narrow {
+    top: 240px;
+    left: 20px;
+    width: 85%;
+    height: 240px;
+  }
+
+  .project-card--left .project-card__image--bashly {
+    top: 110px;
+    left: 20px;
+    transform: none;
+    width: 80%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  /* Робот Фьёрли - больший отступ снизу и высота */
+  .projects-row:nth-child(2) .project-card--right {
+    margin-bottom: 80px;
+    min-height: 550px;
+  }
+
+  .project-card--right .project-card__bg--orange-narrow {
+    top: 240px;
+    left: 20px;
+    width: 85%;
+    height: 240px;
+  }
+
+  .project-card--right .project-card__image--robot {
+    top: 105px;
+    left: 20px;
+    transform: none;
+    width: 80%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  /* Зверополис */
+  .project-card--wide .project-card__bg--orange-wide {
+    top: 90px;
+    left: 20px;
+    width: 85%;
+    height: 320px;
+  }
+
+  .project-card--wide .project-card__image--zveropolis {
+    top: 100px;
+    left: 20px;
+    transform: none;
+    width: 90%;
+    height: auto;
+  }
+
+  .projects-decor {
+    display: none;
+  }
+
+  .contacts--projects {
+    padding: 100px 0;
+  }
+
+  .contacts__row {
+    gap: 20px;
+  }
+
+  .contacts__item {
+    font-size: 16px;
+  }
+
+  .contacts__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .scroll-up {
+    width: 50px;
+  }
+}

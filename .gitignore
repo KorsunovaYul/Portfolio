@@ -1,0 +1,26 @@
+# Adobe
+*.prproj
+*.aep
+*.ai
+*.psd
+
+# Video sources
+*.mp4
+*.m4v
+
+# Figma
+*.fig
+
+# Documents
+*.docx
+*.pdf
+*.txt
+*.md
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log

@@ -1,0 +1,1265 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* PROJECT HERO SECTION */
+.project-hero {
+  padding-top: 170px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.project-hero__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.project-hero__title {
+  grid-column: 1 / 11;
+}
+
+.project-hero__nav {
+  grid-column: 11 / 13;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.project-hero__title h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 96px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.project-hero__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 24px;
+  display: block;
+}
+
+/* PROJECT DESCRIPTION SECTION */
+.project-description {
+  padding: 50px 0;
+	padding-bottom: 200px;
+}
+
+.project-description__content {
+  grid-column: 1 / 6;
+}
+
+.project-description__content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.project-description__content p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* TOOLS BLOCK */
+.project-description__tools {
+  grid-column: 7 / 11;
+}
+
+.project-description__tools--wide {
+  grid-column: 7 / 12;
+}
+
+.project-description__tools--wide .tools-grid {
+  grid-template-columns: 1fr;
+}
+
+/* Re:Крой tools grid */
+.tools-grid--rekroy {
+  grid-template-columns: 3fr 2fr !important;
+}
+
+.project-description__tools--rekroy {
+  grid-column: 7 / 12;
+}
+
+/* Башлы Кэше tools grid - 4 колонки */
+.tools-grid--bashly {
+  grid-template-columns: 1fr !important;
+}
+
+.project-description__tools--bashly {
+  grid-column: 7 / 11;
+}
+
+.project-description__year--bashly {
+  grid-column: 12 / 13;
+}
+
+.project-description__year--bashly-desk {
+  display: block;
+}
+
+.project-description__year--bashly-mob {
+  display: none;
+}
+
+.project-description__year--rekroy {
+  grid-column: 12 / 13;
+}
+
+.project-description__tools h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 40px;
+}
+
+.tools-block h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tools-list span {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.project-description__year--rekroy {
+  display: none;
+}
+
+.project-description__year--rekroy-desk {
+  display: block;
+}
+
+.project-description__year--rekroy-mob {
+  display: none;
+}
+
+/* YEAR BLOCK */
+.project-description__year {
+  grid-column: 12 / 13;
+  text-align: right;
+}
+
+.project-description__year span {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* PROJECT ADDITIONAL SECTION */
+.project-additional {
+  padding: 120px 0;
+}
+
+.project-additional--rekroy {
+  margin-top: -140px;
+  padding: 0 0 180px;
+}
+
+.project-additional__coauthors {
+  grid-column: 1 / 6;
+}
+
+.project-additional__coauthors h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.project-additional__coauthors p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.coauthors-link {
+  color: inherit;
+  text-decoration: underline;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  cursor: pointer;
+}
+
+.coauthors-link:hover {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.project-additional__awards {
+  grid-column: 7 / 13;
+  background: var(--accent);
+  padding: 16px;
+}
+
+.project-additional__awards h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.project-additional__awards p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* Башлы Кэше - соавторы без наград */
+.project-additional--bashly {
+  margin-top: -140px;
+  padding: 0 0 180px;
+}
+
+.project-additional__coauthors-full {
+  grid-column: 1 / 13;
+}
+
+.project-additional__coauthors-full h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.project-additional__coauthors {
+  grid-column: 1 / 5;
+}
+
+.project-additional__coauthors-names {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-additional__coauthors-names--left {
+  grid-column: 5 / 7;
+}
+
+.project-additional__coauthors-names--right {
+  grid-column: 7 / 10;
+}
+
+.project-additional__coauthors-names p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Re:Крой VIDEOS SECTION */
+.project-rekroy-videos {
+  background: var(--green);
+  width: 100%;
+  padding: 0 0 150px;
+  position: relative;
+}
+
+.project-rekroy__video-wrapper {
+  grid-column: 2 / 12;
+  position: relative;
+  z-index: 1;
+}
+
+.project-rekroy__video-wrapper:first-child {
+  margin-top: -120px;
+}
+
+.project-rekroy__video {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: -15px 15px 0 var(--dark);
+}
+
+.project-rekroy__buttons {
+  grid-column: 2 / 12;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+}
+
+.btn--guide {
+  background: var(--accent);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--dark);
+  transition: background 0.3s ease, color 0.3s ease;
+  width: calc((100% - 220px) / 12 * 3);
+  text-align: center;
+  display: inline-block;
+}
+
+.btn--guide:hover {
+  background: var(--dark);
+  color: var(--bg);
+}
+
+.btn--guide:active {
+  background: var(--dark);
+  color: var(--bg);
+}
+
+/* Башлы Кэше VIDEOS SECTION - 4 видео по 3 колонки */
+.project-bashly-videos {
+  background: var(--green);
+  width: 100%;
+  padding: 0 0 150px;
+  position: relative;
+}
+
+.project-bashly-videos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('img/ЗелёныйШум.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.project-bashly__video-wrapper {
+  grid-column: span 3;
+  position: relative;
+  z-index: 1;
+  margin-top: -100px;
+}
+
+.project-bashly__video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-bashly__buttons {
+  grid-column: 2 / 12;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+}
+
+/* PROJECT VIDEO SECTION */
+.project-video-section {
+  background: var(--green);
+  position: relative;
+  padding: 0 0 150px;
+}
+
+.project-video-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('img/ЗелёныйШум.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* ROBOT SECTION */
+.project-robot-section {
+  padding: 0 0 150px;
+}
+
+.project-robot__images {
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  margin-top: -120px;
+}
+
+.project-robot__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-video__wrapper {
+  grid-column: 2 / 12;
+  position: relative;
+  z-index: 1;
+}
+
+.project-video__player {
+  width: 100%;
+  display: block;
+  margin: -120px auto 0;
+   box-shadow: -15px 15px 0 var(--dark);
+}
+
+.project-video__buttons {
+  grid-column: 2 / 12;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+}
+
+.project-video__buttons--single {
+  justify-content: center;
+}
+
+.project-video__buttons--single .btn--figma {
+  width: calc((100% - 220px) / 12 * 3);
+}
+
+.btn--figma {
+  background: var(--accent);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--dark);
+  transition: background 0.3s ease, color 0.3s ease;
+  width: calc((100% - 220px) / 12 * 3);
+  text-align: center;
+  display: inline-block;
+}
+
+.btn--figma:hover {
+  background: var(--dark);
+  color: var(--bg);
+}
+
+.btn--figma:active {
+  background: var(--dark);
+  color: var(--bg);
+}
+
+.btn--site {
+  background: var(--accent);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--dark);
+  transition: background 0.3s ease, color 0.3s ease;
+  width: calc((100% - 220px) / 12 * 2);
+  text-align: center;
+  display: inline-block;
+}
+
+.btn--site:hover {
+  background: var(--dark);
+  color: var(--bg);
+}
+
+.btn--site:active {
+  background: var(--dark);
+  color: var(--bg);
+}
+
+/* NAVIGATION ARROWS */
+.project-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--dark);
+  transition: color 0.3s ease;
+}
+
+.project-nav__svg {
+  width: 100%;
+  height: auto;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.project-nav:hover {
+  color: var(--accent);
+}
+
+.project-nav:active {
+  color: var(--dark);
+}
+
+.project-nav {
+  width: 94px;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+/* Планшеты и небольшие десктопы (до 1024px) */
+@media (max-width: 1024px) {
+  .project-hero {
+    padding-top: 220px;
+    padding-bottom: 80px;
+  }
+
+  .project-hero__title h1 {
+    font-size: 72px;
+  }
+
+  .project-hero__subtitle {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .project-hero__nav {
+    grid-column: 10 / 13;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .project-nav {
+    width: 70px;
+  }
+
+  .project-description {
+    padding: 40px 0;
+  }
+
+  .project-description__content {
+    grid-column: 1 / 7;
+  }
+
+  .project-description__content h3 {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  .project-description__content p {
+    font-size: 18px;
+  }
+
+  .project-description__tools {
+    grid-column: 8 / 12;
+  }
+
+  .project-description__tools h3 {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .tools-block h4 {
+    font-size: 22px;
+  }
+
+  .tools-list span {
+    font-size: 20px;
+  }
+
+  .project-description__year {
+    grid-column: 11 / 13;
+    text-align: right;
+  }
+
+  .project-description__year span {
+    font-size: 36px;
+  }
+
+  .project-additional {
+    padding: 100px 0;
+  }
+
+  .project-additional--rekroy {
+    margin-top: -120px;
+    padding: 0 0 150px;
+  }
+
+  .project-additional__coauthors {
+    grid-column: 1 / 8;
+  }
+
+  .project-additional__coauthors h3 {
+    font-size: 36px;
+  }
+
+  .project-additional__coauthors p {
+    font-size: 18px;
+  }
+
+  .project-additional__awards {
+    grid-column: 8 / 13;
+    padding: 14px;
+  }
+
+  .project-additional__awards h3 {
+    font-size: 36px;
+  }
+
+  .project-additional__awards p {
+    font-size: 18px;
+  }
+
+  /* Башлы Кэше - соавторы */
+  .project-additional--bashly {
+    margin-top: -140px;
+    padding: 0 0 150px;
+  }
+
+  .project-additional__coauthors {
+    grid-column: 1 / 5;
+  }
+
+  .project-additional__coauthors-names--left {
+    grid-column: 5 / 7;
+  }
+
+  .project-additional__coauthors-names--right {
+    grid-column: 7 / 10;
+  }
+
+  .project-video-section {
+    padding: 0 0 100px;
+  }
+
+  .project-video__wrapper {
+    grid-column: 2 / 12;
+  }
+
+  .project-video__player {
+    margin-top: -80px;
+    box-shadow: 12px 12px 12px 12px var(--dark);
+  }
+
+  .project-video__buttons {
+    grid-column: 2 / 12;
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  .project-robot__images {
+    grid-column: 1 / 13;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: -80px;
+  }
+
+  .project-rekroy-videos {
+    padding: 0 0 100px;
+  }
+
+  .project-rekroy__video-wrapper {
+    grid-column: 2 / 12;
+  }
+
+  .project-rekroy__video-wrapper:first-child {
+    margin-top: -80px;
+  }
+
+  .project-rekroy__video {
+    box-shadow: -12px 12px 0 var(--dark);
+  }
+
+  .project-rekroy__buttons {
+    grid-column: 2 / 12;
+    gap: 15px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  /* Башлы Кэше видео */
+  .project-bashly-videos {
+    padding: 0 0 100px;
+  }
+
+  .project-bashly__video-wrapper {
+    grid-column: 2 / 12;
+    margin-top: -80px;
+  }
+
+  .project-bashly__video {
+    box-shadow: none;
+  }
+
+  .project-bashly__buttons {
+    grid-column: 2 / 12;
+    gap: 15px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  .project-video__buttons--single .btn--figma {
+    width: calc((100% - 180px) / 12 * 3);
+  }
+
+  .btn--figma {
+    width: calc((100% - 180px) / 12 * 3);
+  }
+
+  .btn--site {
+    width: calc((100% - 180px) / 12 * 2);
+  }
+
+  .btn--guide {
+    width: calc((100% - 180px) / 12 * 3);
+  }
+}
+
+/* Планшеты портретные и большие телефоны (до 768px) */
+@media (max-width: 768px) {
+  .project-hero {
+    padding-top: 180px;
+    padding-bottom: 60px;
+  }
+
+  .project-hero__title h1 {
+    font-size: 56px;
+  }
+
+  .project-hero__subtitle {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .project-hero__grid {
+    gap: 15px;
+  }
+
+  .project-hero__title {
+    grid-column: 1 / 10;
+  }
+
+  .project-hero__nav {
+    grid-column: 10 / 13;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .project-nav {
+    width: 60px;
+  }
+
+  .project-description {
+    padding: 35px 0;
+  }
+
+  .project-description__content {
+    grid-column: 1 / 13;
+  }
+
+  .project-description__content h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .project-description__content p {
+    font-size: 18px;
+  }
+
+  .project-description__tools {
+    grid-column: 1 / 13;
+  }
+
+  .project-description__tools h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .tools-block h4 {
+    font-size: 20px;
+  }
+
+  .tools-list span {
+    font-size: 18px;
+  }
+
+  .project-description__year {
+    grid-column: 1 / 13;
+    text-align: right;
+    margin-top: 25px;
+  }
+
+  .project-description__year span {
+    font-size: 32px;
+  }
+
+  .project-additional {
+    padding: 80px 0;
+  }
+
+  .project-additional--rekroy {
+    margin-top: -100px;
+    padding: 0 0 230px;
+  }
+
+  .project-additional--bashly {
+    margin-top: -100px;
+    padding: 0 0 350px;
+  }
+
+  .project-additional__coauthors {
+    grid-column: 1 / 13;
+  }
+
+  .project-additional__coauthors h3 {
+    font-size: 32px;
+  }
+
+  .project-additional__coauthors p {
+    font-size: 18px;
+  }
+
+  /* Башлы Кэше - соавторы */
+  .project-additional__coauthors-names--left {
+    grid-column: 5 / 7;
+  }
+
+  .project-additional__coauthors-names--right {
+    grid-column: 7 / 10;
+  }
+
+  .project-additional__awards {
+    grid-column: 1 / 13;
+    padding: 14px;
+  }
+
+  .project-additional__awards h3 {
+    font-size: 32px;
+  }
+
+  .project-additional__awards p {
+    font-size: 18px;
+  }
+
+  .project-video-section {
+    padding: 0 0 100px;
+  }
+
+  .project-video__wrapper {
+    grid-column: 1 / 13;
+  }
+
+  .project-video__player {
+    margin-top: -60px;
+    box-shadow: 0 10px 0 var(--dark);
+  }
+
+  .project-video__buttons {
+    grid-column: 1 / 13;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .project-video__buttons--single .btn--figma {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .project-robot__images {
+    grid-column: 1 / 13;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: -60px;
+  }
+
+  .project-rekroy-videos {
+    padding: 0 0 100px;
+  }
+
+  .project-rekroy__video-wrapper {
+    grid-column: 1 / 13;
+  }
+
+  .project-rekroy__video-wrapper:first-child {
+    margin-top: -60px;
+  }
+
+  .project-rekroy__video {
+    box-shadow: -10px 10px 0 var(--dark);
+  }
+
+  .project-rekroy__buttons {
+    grid-column: 1 / 13;
+    gap: 12px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Башлы Кэше видео */
+  .project-bashly-videos {
+    padding: 0 0 100px;
+  }
+
+  .project-bashly__video-wrapper {
+    grid-column: 1 / 13;
+    margin-top: -60px;
+  }
+
+  .project-bashly__video {
+    box-shadow: none;
+  }
+
+  .project-bashly__buttons {
+    grid-column: 1 / 13;
+    gap: 12px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn--figma,
+  .btn--site,
+  .btn--guide {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Мобильные телефоны (до 480px) */
+@media (max-width: 480px) {
+  .project-hero {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .project-hero__title h1 {
+    font-size: 42px;
+  }
+
+  .project-hero__subtitle {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  .project-hero__title {
+    grid-column: 1 / 10;
+  }
+
+  .project-hero__nav {
+    grid-column: 10 / 13;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .project-nav {
+    width: 40px;
+  }
+
+  .project-description {
+    padding: 30px 0;
+    margin-bottom: 0;
+  }
+
+  .project-page-fyorli {
+    margin-top: 250px !important;
+  }
+
+  .project-page-zveropolis {
+    margin-top: 150px !important;
+  }
+
+  .project-description__content {
+    grid-column: 1 / 13;
+  }
+
+  .project-description__content h3 {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+
+  .project-description__content p {
+    font-size: 16px;
+  }
+
+  .project-description__tools {
+    grid-column: 1 / 13;
+  }
+
+  .project-description__tools h3 {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .tools-block h4 {
+    font-size: 18px;
+  }
+
+  .tools-list span {
+    font-size: 18px;
+  }
+
+  .project-description__year {
+    grid-column: 1 / 13;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .project-description__year--rekroy {
+    margin-top: 60px;
+  }
+
+  .project-description__year--purrfect {
+    margin-bottom: 100px;
+  }
+
+  .project-description__year span {
+    font-size: 28px;
+  }
+
+  .project-additional {
+    padding: 60px 0;
+  }
+
+  .project-additional--rekroy {
+    margin-top: -50px;
+    padding: 40px 0 170px;
+  }
+
+  .project-additional__awards {
+    margin-bottom: 0;
+  }
+
+  .project-description__year--rekroy-desk {
+    display: none;
+  }
+
+  .project-description__year--rekroy-mob {
+    display: block;
+    margin-top: 0;
+  }
+
+  .project-additional--bashly {
+    margin-top: -30px;
+    padding: 40px 0 200px;
+  }
+
+  .project-additional__coauthors-full {
+    grid-column: 1 / 13;
+  }
+
+  .project-additional__coauthors-full h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .project-additional__coauthors {
+    grid-column: 1 / 13;
+  }
+
+  .project-additional__coauthors h3 {
+    font-size: 28px;
+  }
+
+  .project-additional__coauthors p {
+    font-size: 16px;
+  }
+
+  /* Башлы Кэше - соавторы */
+  .project-additional__coauthors-names--left {
+    grid-column: 1 / 13;
+    margin-top: 20px;
+  }
+
+  .project-additional__coauthors-names--right {
+    grid-column: 1 / 13;
+    margin-top: 10px;
+  }
+
+  .project-description__year--bashly-mob {
+    grid-column: 1 / 13;
+    text-align: right;
+    margin-top: 40px;
+  }
+
+  .project-additional__coauthors-names p {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .project-description__year--bashly {
+    display: none;
+  }
+
+  .project-description__year--bashly-desk {
+    display: none;
+  }
+
+  .project-description__year--bashly-mob {
+    display: block;
+    grid-column: 1 / 13;
+    text-align: right;
+    margin-top: 40px;
+  }
+
+  .project-additional__awards {
+    grid-column: 1 / 13;
+    padding: 12px;
+    margin-bottom: 0;
+  }
+
+  .project-additional__awards h3 {
+    font-size: 28px;
+  }
+
+  .project-additional__awards p {
+    font-size: 16px;
+  }
+
+  .project-video-section {
+    padding: 0 0 80px;
+  }
+
+  .project-video__wrapper {
+    grid-column: 1 / 13;
+  }
+
+  .project-video__player {
+    margin-top: -40px;
+    box-shadow: 0 8px 0 var(--dark);
+  }
+
+  .project-video__buttons {
+    grid-column: 1 / 13;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .project-video__buttons--single .btn--figma {
+    width: auto;
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .project-robot__images {
+    grid-column: 1 / 13;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: -40px;
+  }
+
+  .project-robot-section {
+    padding: 0 0 80px;
+  }
+
+  .project-rekroy-videos {
+    padding: 0 0 80px;
+  }
+
+  .project-rekroy__video-wrapper {
+    grid-column: 1 / 13;
+  }
+
+  .project-rekroy__video-wrapper:first-child {
+    margin-top: -40px;
+  }
+
+  .project-rekroy__video {
+    box-shadow: -8px 8px 0 var(--dark);
+  }
+
+  .project-rekroy__buttons {
+    grid-column: 1 / 13;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Башлы Кэше видео */
+  .project-bashly-videos {
+    padding: 0 0 80px;
+  }
+
+  .project-bashly__video-wrapper {
+    grid-column: 1 / 13;
+    margin-top: -40px;
+  }
+
+  .project-bashly__video-wrapper:first-child {
+    margin-top: -40px;
+  }
+
+  .project-bashly__video {
+    box-shadow: none;
+  }
+
+  .project-bashly__buttons {
+    grid-column: 1 / 13;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn--figma,
+  .btn--site,
+  .btn--guide {
+    width: auto;
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+}
+
