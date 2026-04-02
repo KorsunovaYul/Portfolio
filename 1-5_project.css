@@ -16,7 +16,7 @@
 }
 
 .project-hero__title {
-  grid-column: 1 / 11;
+  grid-column: 1 / 10;
 }
 
 .project-hero__nav {
@@ -528,6 +528,28 @@
   width: 94px;
 }
 
+/* Десктоп - размеры стрелок */
+@media (min-width: 1025px) {
+  .project-hero__title {
+    grid-column: 1 / 12;
+  }
+
+  .project-hero__nav {
+    grid-column: 12 / 13;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 128px;
+  }
+
+  .project-nav--left,
+  .project-nav--right {
+    width: 90px;
+    height: 90px;
+  }
+}
+
 /* ===========================
    RESPONSIVE
    =========================== */
@@ -537,6 +559,10 @@
   .project-hero {
     padding-top: 220px;
     padding-bottom: 80px;
+  }
+
+  .project-hero__title {
+    grid-column: 1 / 11;
   }
 
   .project-hero__title h1 {
