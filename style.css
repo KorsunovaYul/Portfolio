@@ -19,6 +19,15 @@ body {
   background: var(--bg);
   color: var(--dark);
   font-family: 'Inter', sans-serif;
+  cursor: url('img/cursor.svg') 16 16, auto;
+}
+
+a, button, .logo, .project-nav, .scroll-up, .btn, .coauthors-link, .nav a, .nav .btn {
+  cursor: url('img/cursor-hover.svg') 16 16, pointer;
+}
+
+a:active, button:active, .logo:active, .project-nav:active, .scroll-up:active, .btn:active, .coauthors-link:active, .nav a:active, .nav .btn:active, .project-nav:active {
+  cursor: url('img/cursor-click.svg') 16 16, pointer;
 }
 
 /* LAYOUT */
@@ -55,7 +64,6 @@ body {
   align-items: center;
   text-decoration: none;
   color: var(--dark);
-  cursor: pointer;
   transition: color 0.3s ease;
 }
 
@@ -70,6 +78,22 @@ body {
 .logo img {
   width: 32px;
   height: 32px;
+}
+
+.logo:hover img {
+  animation: logo-blink 0.6s ease-in-out infinite;
+}
+
+@keyframes logo-blink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .logo span {
@@ -109,7 +133,6 @@ body {
   border-radius: 24px;
   font-weight: bold;
   font-size: 16px;
-  cursor: pointer;
   text-decoration: none;
   color: var(--dark);
   transition: background 0.3s ease, color 0.3s ease;
@@ -487,7 +510,6 @@ h3 {
   display: block;
   width: calc((100% - 220px) / 12);
   height: auto;
-  cursor: pointer;
   color: var(--dark);
   transition: color 0.3s ease;
 }
@@ -942,5 +964,30 @@ h3 {
   .decor--tooltip1,
   .decor--tooltip2 {
     width: 110px;
+  }
+}
+
+/* Звёздочки при клике */
+.click-star {
+  position: fixed;
+  width: 49px;
+  height: 49px;
+  pointer-events: none;
+  z-index: 9999;
+  animation: star-popup 0.6s ease-out forwards;
+}
+
+@keyframes star-popup {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(var(--tx), var(--ty)) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(var(--tx) * 1.5), calc(var(--ty) * 1.5)) scale(0.8);
   }
 }
