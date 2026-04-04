@@ -26,6 +26,10 @@ a, button, .logo, .project-nav, .scroll-up, .btn, .coauthors-link, .nav a, .nav 
   cursor: url('img/cursor-hover.svg') 2 2, pointer;
 }
 
+*:active {
+  cursor: url('img/cursor-click.svg') 2 2, pointer !important;
+}
+
 a:active, button:active, .logo:active, .project-nav:active, .scroll-up:active, .btn:active, .coauthors-link:active, .nav a:active, .nav .btn:active, .project-nav:active {
   cursor: url('img/cursor-click.svg') 2 2, pointer;
 }
