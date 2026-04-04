@@ -17,8 +17,9 @@ document.addEventListener('mousedown', function(e) {
     const y = Math.sin(angle) * distance;
 
     // Позиционируем звёздочки относительно точки клика курсора (hotspot 2,2)
-    star.style.left = (e.pageX - 2) + 'px';
-    star.style.top = (e.pageY - 2) + 'px';
+    // Используем clientX/clientY т.к. position: fixed не учитывает прокрутку
+    star.style.left = (e.clientX - 2) + 'px';
+    star.style.top = (e.clientY - 2) + 'px';
     star.style.setProperty('--tx', x + 'px');
     star.style.setProperty('--ty', y + 'px');
     
