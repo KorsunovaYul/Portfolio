@@ -15,10 +15,10 @@ document.addEventListener('mousedown', function(e) {
     const distance = 50;
     const x = Math.cos(angle) * distance;
     const y = Math.sin(angle) * distance;
-    
-    // Используем clientX/clientY для правильного позиционирования при прокрутке
-    star.style.left = (e.clientX - 24) + 'px';
-    star.style.top = (e.clientY - 24) + 'px';
+
+    // Позиционируем звёздочки относительно точки клика курсора (hotspot 2,2)
+    star.style.left = (e.pageX - 2) + 'px';
+    star.style.top = (e.pageY - 2) + 'px';
     star.style.setProperty('--tx', x + 'px');
     star.style.setProperty('--ty', y + 'px');
     
